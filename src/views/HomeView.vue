@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="w-2/3 grid grid-cols-4 gap-8 mt-10 mx-6">
+    <div class="w-2/3 grid grid-cols-4 gap-8 mt-2 mx-6">
       <!-- Repeat this div for each product card -->
       <div
         v-for="product in products"
@@ -33,8 +33,32 @@
     </div>
 
     <aside
-      class="h-96 w-1/3 bg-white rounded-lg shadow-md p-6 mt-10 sticky top-0 hidden md:block"
-    ></aside>
+      class="h-auto w-1/3 bg-white rounded-lg shadow-md p-6 mt-2 sticky z-0 top-0 hidden md:flex flex-col"
+    >
+      <div class="flex justify-between items-center border-b pb-2">
+        <div>
+          <span>Order Samuray</span>
+          <h6>#10000011</h6>
+        </div>
+        <div>
+          <font-awesome-icon
+            icon="fa-solid fa-repeat"
+            class="text-black size-10"
+          />
+        </div>
+      </div>
+      <div class="relative bg-gray-300">
+        <img :src="this.image" alt="" class="h-28 w-28" />
+        <span>Food Name</span>
+        <button>-</button>
+        <span>5</span>
+        <button>-</button>
+        <font-awesome-icon
+          icon="fa-solid fa-repeat"
+          class="text-black size-10"
+        />
+      </div>
+    </aside>
   </div>
 </template>
 
@@ -43,6 +67,7 @@ export default {
   name: "HomeView",
   data() {
     return {
+      image: require("../assets/fruits.png"),
       products: [
         {
           id: 1,

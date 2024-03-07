@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* import specific icons */
 import {
   faAnglesRight,
+  faRepeat,
   faSearch,
   faShoppingCart,
   faSignIn,
@@ -31,7 +32,8 @@ library.add(
   faSignIn,
   faRegistered,
   faSignOut,
-  faSearch
+  faSearch,
+  faRepeat
 );
 
 createApp(App)
