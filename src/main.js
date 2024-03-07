@@ -6,10 +6,10 @@ import "./assets/globle.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-/* import font awesome icon component */
+/* Import Font Awesome icon components */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-/* import specific icons */
+/* Import specific icons */
 import {
   faAnglesRight,
   faRepeat,
@@ -17,15 +17,24 @@ import {
   faShoppingCart,
   faSignIn,
   faSignOut,
+  faTrash,
   faUser,
   faUserSecret,
 } from "@fortawesome/free-solid-svg-icons";
-import { faRegistered } from "@fortawesome/free-regular-svg-icons";
 
-/* add icons to the library */
+import {
+  faRegistered,
+  faUserCircle,
+  faEnvelope,
+  faCreditCard, // Import credit card icon for payment
+} from "@fortawesome/free-regular-svg-icons";
+
+/* Add icons to the library */
 library.add(
   faUserSecret,
   faUser,
+  faUserCircle,
+  faEnvelope,
   faSearch,
   faShoppingCart,
   faAnglesRight,
@@ -33,7 +42,9 @@ library.add(
   faRegistered,
   faSignOut,
   faSearch,
-  faRepeat
+  faRepeat,
+  faTrash,
+  faCreditCard // Add credit card icon
 );
 
 createApp(App)

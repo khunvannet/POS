@@ -33,7 +33,7 @@
     </div>
 
     <aside
-      class="h-auto w-1/3 bg-white rounded-lg shadow-md p-6 mt-2 sticky z-0 top-0 hidden md:flex flex-col"
+      class="h-full w-1/3 bg-white rounded-lg shadow-md p-6 mt-2 sticky z-0 top-0 hidden md:flex flex-col"
     >
       <div class="flex justify-between items-center border-b pb-2">
         <div>
@@ -47,17 +47,132 @@
           />
         </div>
       </div>
-      <div class="relative bg-gray-300">
-        <img :src="this.image" alt="" class="h-28 w-28" />
-        <span>Food Name</span>
-        <button>-</button>
-        <span>5</span>
-        <button>-</button>
-        <font-awesome-icon
-          icon="fa-solid fa-repeat"
-          class="text-black size-10"
-        />
+      <div class="relative bg-gray-300 flex items-center p-2 mt-4">
+        <img :src="this.image" alt="" class="h-20 w-20 mr-4" />
+        <div class="flex justify-between items-center w-full">
+          <span class="block">Food Name</span>
+          <span class="ml-4">$10.5</span>
+          <div class="flex items-center">
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              -
+            </button>
+            <span class="mr-2">5</span>
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              +
+            </button>
+            <a href="">
+              <font-awesome-icon
+                icon="fa-solid fa-trash"
+                class="text-red-700 size-7"
+              />
+            </a>
+          </div>
+        </div>
       </div>
+      <div class="relative bg-gray-300 flex items-center p-2 mt-4">
+        <img :src="this.image" alt="" class="h-20 w-20 mr-4" />
+        <div class="flex justify-between items-center w-full">
+          <span class="block">Food Name</span>
+          <span class="ml-4">$10.5</span>
+          <div class="flex items-center">
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              -
+            </button>
+            <span class="mr-2">5</span>
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              +
+            </button>
+            <a href="">
+              <font-awesome-icon
+                icon="fa-solid fa-trash"
+                class="text-red-700 size-7"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-gray-300 flex items-center p-2 mt-4">
+        <img :src="this.image" alt="" class="h-20 w-20 mr-4" />
+        <div class="flex justify-between items-center w-full">
+          <span class="block">Food Name</span>
+          <span class="ml-4">$10.5</span>
+          <div class="flex items-center">
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              -
+            </button>
+            <span class="mr-2">5</span>
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              +
+            </button>
+            <a href="">
+              <font-awesome-icon
+                icon="fa-solid fa-trash"
+                class="text-red-700 size-7"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-gray-300 flex items-center p-2 mt-4">
+        <img :src="this.image" alt="" class="h-20 w-20 mr-4" />
+        <div class="flex justify-between items-center w-full">
+          <span class="block">Food Name</span>
+          <span class="ml-4">$10.5</span>
+          <div class="flex items-center">
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              -
+            </button>
+            <span class="mr-2">5</span>
+            <button
+              class="mr-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm"
+            >
+              +
+            </button>
+            <a href="">
+              <font-awesome-icon
+                icon="fa-solid fa-trash"
+                class="text-red-700 size-7"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between mt-4">
+        <span>Subtotal</span>
+        <h4>$80.00</h4>
+      </div>
+      <div class="flex items-center justify-between mt-4 border-b pb-2">
+        <span>Discount</span>
+        <h4>%10</h4>
+      </div>
+      <div class="flex items-center justify-between mt-10">
+        <span>Total</span>
+        <h4>$80.00</h4>
+      </div>
+      <button
+        class="mt-4 w-full px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition-colors duration-300"
+      >
+        <font-awesome-icon
+          icon="fa-solid fa-shopping-cart"
+          class="text-white"
+        />
+        Pay
+      </button>
     </aside>
   </div>
 </template>
